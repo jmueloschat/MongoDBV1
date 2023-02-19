@@ -1,0 +1,26 @@
+{
+  "name": "mongodbv1",
+  "version": "1.0.0",
+  "description": "App CRUD usando MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmueloschat/MongoDBV1.git"
+  },
+  "keywords": [],
+  "author": "Juliano Mueloschat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmueloschat/MongoDBV1/issues"
+  },
+  "homepage": "https://github.com/jmueloschat/MongoDBV1#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.2",
+    "nodemon": "^2.0.20"
+  }
+}
