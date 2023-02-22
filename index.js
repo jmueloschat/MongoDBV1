@@ -26,13 +26,14 @@ app.use(
     }),
 )
 
+mongoose.set('strictQuery', false);
+
 //conectar no db
 mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@apicluster.dtrhmhy.mongodb.net/apiCluster?retryWrites=true&w=majority`)
 .then( ()=>{
     console.log("mongoose ok");    
     app.listen(3000); //entregar uma porta e se conectou banco inicia o serviço
-    console.log("app listen 3000 ok");
-    
+    console.log("app listen 3000 ok");    
 })
 .catch((err) => console.log(err))
 
